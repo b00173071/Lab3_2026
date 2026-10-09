@@ -69,14 +69,12 @@ public class StackReferenceBased implements StackInterface
 	        return;
 	    }
 
-	    Node current = top;
+	    Node curr = top;
 
-	    System.out.println("TOP");
+	    while (curr != null) {
+	        System.out.println(curr.getItem());
 
-	    while (current != null) {
-	        System.out.println(current.getItem());
-
-	        current = current.getNext();
+	        curr = curr.getNext();
 	    }
 
 	    System.out.println();
