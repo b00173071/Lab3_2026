@@ -6,6 +6,15 @@ public class Main {
 
 	    Scanner keyboard = new Scanner(System.in);
 	    StackReferenceBased stack = new StackReferenceBased();
+	    
+	    System.out.println("Is the list empty?: " + stack.isEmpty());
+	    stack.push("bread");
+	    stack.push("orange");
+	    stack.push("54");
+		
+		
+		stack.displayStack();
+		
 
 	    int choice = 0;
 
