@@ -12,7 +12,8 @@ public class Main {
 	    stack.push("orange");
 	    stack.push("54");
 		
-		
+	    System.out.println("Balanced: " + stack.isBalanced("{word}"));
+	    System.out.println("Unbalanced: " + stack.isBalanced("{word"));
 		stack.displayStack();
 		
 

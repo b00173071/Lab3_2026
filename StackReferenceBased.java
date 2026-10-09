@@ -81,6 +81,26 @@ public class StackReferenceBased implements StackInterface
 
 	    System.out.println();
 	}
+  public boolean isBalanced(String s) {
+	    StackReferenceBased stack = new StackReferenceBased();
+
+	    for (int i = 0; i < s.length(); i++) {
+	        char ch = s.charAt(i);
+
+	        if (ch == '{') {
+	            stack.push("{");
+	        }
+	        else if (ch == '}') {
+	            if (stack.isEmpty()) {
+	                return false;
+	            }
+
+	            stack.pop();
+	        }
+	    }
+
+	    return stack.isEmpty();
+	}
 //============================================================================
 //============================================================================
 //============================================================================
